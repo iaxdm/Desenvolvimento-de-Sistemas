@@ -1,0 +1,43 @@
+GET http://localhost:3000/pessoas
+
+###
+
+GET http://localhost:3000/pessoas/3
+
+###
+
+POST http://localhost:3000/pessoas
+Content-Type: application/json
+
+
+{
+    "id":"3",
+    "nome": "Igor",
+    "idade":32,
+    "area": "TI"
+}
+
+###
+
+DELETE http://localhost:3000/pessoas/3
+
+###
+
+PATCH http://localhost:3000/pessoas/1
+Content-Type: application/json
+
+{
+    "nome":"Carlos2",
+    "area":"TI - SOFTWARE"
+}
+
+###
+
+PUT http://localhost:3000/pessoas/1
+Content-Type:application/json
+
+{
+    "nome":"Carlos 4",
+    "area": "TI - Eletrõnica",
+    "idade":38
+}

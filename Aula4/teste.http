@@ -1,0 +1,16 @@
+GET http://localhost:3000/pessoas?nome=carlos&area=ti
+
+###
+
+GET http://localhost:3000/pessoas/2
+
+###
+
+POST http://localhost:3000/pessoas
+Content-Type: application/json
+
+{
+    "nome": "Fulano",
+    "idade":22,
+    "area":"freelancer"
+}
