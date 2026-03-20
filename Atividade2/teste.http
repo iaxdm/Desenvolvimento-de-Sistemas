@@ -1,0 +1,74 @@
+GET http://localhost:3000/produtos
+
+###
+GET http://localhost:3000/produtos?categoria=informática
+
+###
+
+GET http://localhost:3000/produtos/1
+
+###
+
+POST http://localhost:3000/produtos
+Content-Type: application/json
+
+{
+
+"id": "1",
+"nome": "Mouse Gamer",
+"preco": 150.00,
+"categoria": "informática"
+
+}
+
+###
+
+POST http://localhost:3000/produtos
+Content-Type: application/json
+
+{
+    
+"id": "2",
+"nome": "Teclado Gamer",
+"preco": 120.00,
+"categoria": "informática"
+
+}
+
+###
+
+POST http://localhost:3000/produtos
+Content-Type: application/json
+
+{
+
+"id": "3",
+"nome": "Tênis",
+"preco": 300.00,
+"categoria": "calçados"
+
+}
+
+###
+
+PUT http://localhost:3000/produtos/1
+Content-Type: application/json
+
+{
+    "nome":"Mouse Gamer 2.0"
+}
+
+###
+
+PUT http://localhost:3000/produtos/1
+Content-Type: application/json
+
+{
+    "nome":"Mouse Gamer 2.0",
+    "preco":190.00,
+    "categoria":"informática"
+}
+
+###
+
+DELETE http://localhost:3000/produtos/1
