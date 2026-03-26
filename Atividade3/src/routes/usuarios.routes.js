@@ -1,10 +1,14 @@
 import {Router} from "express"
-import { listarUsuarios } from "../controllers/usuarios.controller.js"
+import {criarUsuarios, listarUsuarios, listarUsuario, apagarUsuario} from "../controllers/usuarios.controller.js"
 
-const router = Router()
+export const rotas = Router()
 
-router.get("/usuarios, listarUsuarios") //rotas
+rotas.get("/usuarios", listarUsuarios)
 
-router.post("/usuarios", criarUsuario)  //rota para criar usuario
+rotas.get("/usuarios/:id", listarUsuario)
 
-export default router
+rotas.post("/usuarios", criarUsuarios)
+
+rotas.delete("/usuarios/:id", apagarUsuario)
+
+

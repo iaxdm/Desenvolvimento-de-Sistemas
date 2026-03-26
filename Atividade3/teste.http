@@ -6,6 +6,14 @@ POST http://localhost:3000/usuarios
 Content-Type: application/json
 
 {
-    "id":"1",
-    "nome":"Igor"
+    "nome":"Igor",
+    "ativo":"true"
+}
+
+POST http://localhost:3000/usuarios
+Content-Type: application/json
+
+{
+    "nome":"Carlos2",
+    "ativo":"true"
 }
