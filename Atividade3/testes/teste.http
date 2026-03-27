@@ -6,14 +6,14 @@ POST http://localhost:3000/usuarios
 Content-Type: application/json
 
 {
-    "nome":"Igor",
+    "usuario":"Igor",
     "ativo":"true"
 }
 
-POST http://localhost:3000/usuarios
-Content-Type: application/json
+###
 
-{
-    "nome":"Carlos2",
-    "ativo":"true"
-}
+GET http://localhost:3000/usuarios/2
+
+###
+
+DELETE http://localhost:3000/usuarios/1

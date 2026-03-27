@@ -49,7 +49,7 @@ export function apagarUsuario (req, res){
     const id = req.params.id
     const indice = usuarios.findIndex(usuario => usuario.id == id)
 
-    if (!indice) return res.status(404).json({
+    if (indice == -1) return res.status(404).json({
         mensagem:"Usuário não encontrado!"
     })
 

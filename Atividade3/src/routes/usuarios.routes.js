@@ -1,14 +1,14 @@
 import {Router} from "express"
 import {criarUsuarios, listarUsuarios, listarUsuario, apagarUsuario} from "../controllers/usuarios.controller.js"
 
-export const rotas = Router()
+export const rotasUsuarios = Router()
 
-rotas.get("/usuarios", listarUsuarios)
+rotasUsuarios.get("/usuarios", listarUsuarios)
 
-rotas.get("/usuarios/:id", listarUsuario)
+rotasUsuarios.get("/usuarios/:id", listarUsuario)
 
-rotas.post("/usuarios", criarUsuarios)
+rotasUsuarios.post("/usuarios", criarUsuarios)
 
-rotas.delete("/usuarios/:id", apagarUsuario)
+rotasUsuarios.delete("/usuarios/:id", apagarUsuario)
 
 
