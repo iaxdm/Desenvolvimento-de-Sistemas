@@ -28,4 +28,33 @@ Content-Type: application/json
 
 //Deletar pedidos
 
-DELETE http://localhost:3000/api/pedidos/16
+DELETE http://localhost:3000/api/pedidos/20
+
+###
+
+//Atualizar pedidos
+PATCH  http://localhost:3000/api/pedidos/22
+Content-Type: application/json
+
+{
+    "status": "finalizado"
+}
+
+###
+
+//Atualizar todos os dados dos pedidos
+PUT http://localhost:3000/api/pedidos/21
+Content-Type: application/json
+
+{
+    "itens": [
+        {
+            "produto_id": 1,
+            "quantidade": 3
+        },
+        {
+            "produto_id": 2,
+            "quantidade": 1
+        }
+    ]
+} 
