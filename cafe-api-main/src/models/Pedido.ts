@@ -7,6 +7,7 @@ export interface IItemPedido{
     produto_id: number;
     quantidade: number;
     preco_un: number;
+    nome: string;
 }
 
 export interface IPedido { // I antes da palavra pedido representa a interface
@@ -85,7 +86,8 @@ export const PedidoModel = {
                     produto_id: row.produto_id!,
                     pedido_id: row.pedido_id!,
                     quantidade: row.quantidade!,
-                    preco_un: row.produto_preco!
+                    preco_un: row.produto_preco!,
+                    nome: row.produto_nome!
                 })
             }
         }
