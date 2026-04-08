@@ -1,9 +1,9 @@
-interface IUser {
-    id: number;
-    nome: string;
-    email: string;
+export interface IUser {
+  id: number;
+  nome: string;
+  email: string;
 }
 
-function User = (lista_usuarios: IUser[])=>{
-    usuarios: IUser[]
+export function listarNomeUsuarios(lista_usuarios: IUser[]): string[] {
+  return lista_usuarios.map((usuario) => usuario.nome);
 }
