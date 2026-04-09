@@ -44,3 +44,14 @@ console.log(
 );
 
 //Exercício 4
+import { buscarPorId } from "./exercicios/buscar-id";
+
+console.log("\nExercício 4) \nBuscador por id:", buscarPorId(usuarios, 2));
+
+//Exercício 5
+import { mensagemStatus, StatusEnum } from "./exercicios/enum";
+
+console.log(
+  "Exercício 5) \nStatus pedido entregue:",
+  mensagemStatus(StatusEnum.Entregue)
+);

@@ -4,6 +4,6 @@ export interface IUser {
   email: string;
 }
 
-export function listarNomeUsuarios(lista_usuarios: IUser[]): string[] {
+export function listarNomeUsuarios(lista_usuarios: IUser[]) {
   return lista_usuarios.map((usuario) => usuario.nome);
 }
